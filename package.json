@@ -1,0 +1,16 @@
+{
+  "name": "livion-ex2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./scripts/index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hoang Pham",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "live-server": "^1.2.1"
+  }
+}

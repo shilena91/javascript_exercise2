@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ex2</title>
+    <link rel="stylesheet" href="./styles/popup.css" />
+    <link rel="stylesheet" href="./styles/grid.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+  </head>
+
+  <body>
+    <div class="top">
+      <h1>Entries:</h1>
+      <div class="filter">
+        <label style="display: inline">Category:</label>
+        <div style="display: inline" class="selectOption">
+          <select id="filter">
+            <option value="all">All</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JS</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div id="wrapper"></div>
+
+    <button class="open-button">Open Form</button>
+
+    <div class="form-popup" id="myForm">
+      <form class="form-container">
+        <h1>Add Question</h1>
+
+        <label for="question"><b>Question for The Guru:</b></label>
+        <input
+          type="text"
+          placeholder="enter your question"
+          id="question"
+          required
+        />
+
+        <label for="category"><b>Category:</b></label>
+        <div class="selectOption">
+          <select id="options">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JS</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">SAVE</button>
+        <button type="button" id="cancel" class="btn cancel">CANCEL</button>
+      </form>
+    </div>
+    <script type="module" src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/Entry.class.js"></script>
+    <script type="module" src="./scripts/loadData.js"></script>
+    <script type="module" src="./scripts/handleFilterChange.js"></script>
+  </body>
+</html>

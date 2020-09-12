@@ -1,0 +1,29 @@
+#wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.entry {
+  display: grid;
+  grid-template-rows: auto 30px;
+  background-color: orange;
+  border-radius: 10px;
+  /* position: relative; */
+}
+
+.entry p {
+  overflow: auto;
+  padding: 5px;
+}
+
+.category {
+  width: 100%;
+  height: auto;
+  border-top: black dotted 1px;
+  /* position: absolute;
+  bottom: 0; */
+  padding: 5px;
+  font-style: italic;
+}
